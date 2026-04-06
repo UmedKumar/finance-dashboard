@@ -1,38 +1,16 @@
-# FinDash - Personal Finance Dashboard
+# React + Vite
 
-A clean, responsive, and interactive personal finance dashboard built as a frontend development assignment. This application allows users to track their financial activity, view insightful charts, and manage their transactions.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-##  Features
+Currently, two official plugins are available:
 
-* **Dashboard Overview:** View total balance, income, and expenses at a glance.
-* **Smart Insights:** Automatically calculates the highest spending category, largest single expense, and overall savings rate.
-* **Data Visualizations:** Interactive Pie Chart for expense breakdowns and Bar Chart for monthly income vs. expenses.
-* **Transaction Management:** * View all transactions in a sortable, chronologically ordered table.
-    * Search transactions by category.
-    * Filter by Income or Expense.
-* **Role-Based Access Control (RBAC):**
-    * **Viewer Mode:** Can only view data and charts.
-    * **Admin Mode:** Unlocks the ability to add new transactions and delete existing ones.
-* **Theme Toggle:** Seamlessly switch between Light and Dark mode.
-* **Data Persistence:** Uses browser `localStorage` so your data and theme preferences are saved even if you refresh the page.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-##  Tech Stack
+## React Compiler
 
-* **Framework:** React.js (with Vite for fast bundling)
-* **Styling:** Tailwind CSS
-* **Icons:** Lucide React
-* **Charts:** Recharts
-* **State Management:** React Hooks (`useState`, `useEffect`) & LocalStorage
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-##  Getting Started
+## Expanding the ESLint configuration
 
-Follow these steps to run the project locally on your machine.
-
-### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
-
-### Installation
-
-1. Clone the repository (or download the zip file):
-   ```bash
-   git clone <your-repository-url>
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
