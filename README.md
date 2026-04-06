@@ -1,16 +1,124 @@
-# React + Vite
+#  FinDash – Personal Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and interactive **Personal Finance Dashboard** built with React to help users track income, expenses, and financial insights in a simple and intuitive way.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Live Overview
 
-## React Compiler
+FinDash provides a complete financial tracking experience with:
+- Real-time balance updates  
+- Interactive charts  
+- Smart insights  
+- Role-based access control  
+- Persistent data storage  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+##  Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+###  Dashboard Overview
+- View **Total Balance**, **Income**, and **Expenses** instantly  
+- Clean card-based UI for quick understanding  
+
+###  Smart Insights
+- Highest spending category  
+- Largest single expense  
+- Savings rate calculation  
+
+###  Data Visualization
+- **Pie Chart** → Expense breakdown by category  
+- **Bar Chart** → Monthly income vs expenses  
+
+###  Transaction Management
+- Add new transactions (Admin mode)  
+- Delete transactions  
+- Search by category  
+- Filter by Income / Expense  
+- Chronological transaction list  
+
+###  Role-Based Access Control (RBAC)
+- **Viewer Mode:** Read-only access  
+- **Admin Mode:** Full control (Add/Delete transactions)  
+
+###  Theme Toggle
+- Light mode  
+- Dark mode  
+
+###  Data Persistence
+- Uses **localStorage**  
+- Saves:
+  - Transactions  
+  - Theme  
+  - User role  
+
+---
+
+##  Tech Stack
+
+| Technology | Usage |
+|----------|------|
+| React.js (Vite) | Frontend Framework |
+| Tailwind CSS | Styling |
+| Recharts | Data Visualization |
+| Lucide React | Icons |
+| LocalStorage | Data Persistence |
+| React Hooks | State Management |
+
+---
+
+##  Project Structure
+src/
+├── components/
+│   ├── Charts.jsx          # Recharts visualizations
+│   ├── Insights.jsx        # Smart calculations (savings rate, top category)
+│   ├── Navbar.jsx          # Top navigation with theme & role toggles
+│   ├── SummaryCards.jsx    # Balance, Income, and Expense cards
+│   └── TransactionList.jsx # Table, search, filter, and add form
+├── data/
+│   └── mockData.js         # Initial dummy data to populate the dashboard
+├── App.jsx                 # Main layout and state management
+├── index.css               # Tailwind directives and base styles
+└── main.jsx                # React entry point
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/finance-dashboard.git
+2️⃣ Navigate to Project Folder
+cd finance-dashboard
+3️⃣ Install Dependencies
+npm install
+4️⃣ Run Development Server
+npm run dev
+5️⃣ Open in Browser
+
+http://localhost:5173
+
+Key Highlights
+Fast performance with Vite
+Clean and minimal UI design
+Fully responsive layout
+Real-time updates
+Modular component structure
+Beginner-friendly architecture
+
+Future Enhancements
+Export data to CSV / Excel
+Authentication system
+Cloud database integration (Firebase / MongoDB)
+Budget tracking & alerts
+AI-based financial recommendations
+
+Inspiration
+
+Built to simplify personal finance tracking while combining:
+
+Data visualization
+User experience
+Practical real-world use case
+
+---
